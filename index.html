@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link src="Images/iconeClouds.svg">
+    <link rel="icon" href="./Images/iconeClouds.svg">
+    <title>DncWeather</title>
 </head>
 <body>
-    
+    <nav>
+        <div id="lateralD">
+            <h1>DncWeather</h1>
+        </div>
+        <div id="lateralI">
+            <p>Endereços</p>
+            <p>Previsão do tempo</p>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <h1>Descubra Mais com Precisão: <br>
+                Previsões do Tempo e endereços <br>
+                em tempo real.
+            </h1>
+            <img src="./Images/iconeTime.svg" alt="iconeTempo">
+        </article>
+        <section>
+            <form action="">
+                <div>
+                    <label for="nome">Primeiro Nome:</label><br>
+                    <input type="text" required maxlength="15" id="nome" placeholder="Insira seu primeiro nome">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" required id="email" placeholder="Insira seu e-mail">
+                </div>
+                <div>
+                    <label for="cep">Digite o CEP:</label><br>
+                    <input type="text" pattern="[0,9]" maxlength="8" id="cep" value="" placeholder="Insira o CEP">
+                </div>
+                <div id="dados">
+                    <label for="latitude">Digite a latitude e longitude para saber a previsão:</label>
+                    <div id="coordenadas">
+                        <div>
+                            <input type="number" id="latitude" placeholder="Latitude">
+                        </div>
+                        <div>
+                            <input type="number" id="longitude" placeholder="Longitude">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="start()"type="button">Acessar</button>
+                </div>
+            </form>
+            <div id="resultado">
+                <div id="titulo1">
+                    <h1>Resultado da busca por CEP:</h1>
+                    <img src="./Images/iconeLocation.svg" alt="iconeLocation">
+                </div>
+                <div id="titulos">
+                    <label class="item" for="logradouro">Logradouro/nome</label>
+                    <label class="item" for="bairro">Bairro/Distrito</label>
+                    <label class="item" for="uf">Localidade/UF</label>
+                </div>
+                <div id="resultado1">
+                    <p class="item" id="logradouro"></p>
+                    <p class="item" id="bairro"></p>
+                    <p class="item" id="uf"></p>
+                </div>
+            </div>
+            <div id="previsãoTempo">
+                <div id="titulo2">
+                    <h1>Previsão do tempo na região:</h1>
+                    <img src="./Images/iconeClouds.svg" alt="iconeClouds">
+                </div>
+                <div id="resultado2">
+                    <p>Previsão do tempo de acordo com a região: <span id="temperatura"></span></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Termos de Uso | Política de Privacidade</p>
+        </footer>
+    </main>
+<script src="script.js"></script>
 </body>
-</html>
+
+</html>""

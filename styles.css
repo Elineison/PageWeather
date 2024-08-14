@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    background-color: #F2F2F2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C70F2;
+    color: white;
+    font-weight: 800;
+    height: 103px;
+
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#lateralD {
+    margin-left: 56px;
+}
+
+#lateralI {
+    display: flex;
+    margin-right: 69px;
+    gap: 45px;
+    font-size: 25px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 123px;
+    gap: 45px;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: inline-block;
+    text-align: left;
+    padding: 61px;
+    border-radius: 30px;
+    margin-top: 127px;
+}
+
+form label {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+input {
+    background-color: #F2F2F2;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400px;
+    width: 97%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#coordenadas {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+button {
+    color: white;
+    background: #0C70F2E5;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 50px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 6px 4px 0px #0C70F240;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translate(0, -4px);
+    transition: 0.5s;
+}
+
+#resultado {
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    margin-top: 200px;
+}
+
+#titulo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#titulos {
+    display: flex;
+    background-color: #0C70F2;
+    color: white;
+    margin-top: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+}
+
+#resultado1 {
+    display: flex;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+}
+
+.item {
+    flex: 1
+}
+
+#previsãoTempo {
+    margin-top: 123px;
+}
+
+#titulo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#resultado2 {
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #FFFFFF;
+    display: inline-block;
+    padding: 20px 185.70px 20px 185.70px;
+    border-radius: 30px;
+    border: 1px solid #0C70F2;
+    margin-top: 20px;
+}
+
+footer {
+    font-size: 25px;
+    font-weight: 600;
+    color: #F2F2F2;
+    background-color: #0C70F2;
+    margin-top: 200px;
+    padding: 20px 0px 20px 0px;
+    text-align: end;
+}
+
+footer p {
+    margin-right: 40px;
+}
