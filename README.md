@@ -3,9 +3,11 @@ DncWeather é um projeto de previsão do tempo e consulta de CEP, desenvolvido c
 
 Funcionalidades:
 Consulta de CEP: Permite aos usuários inserir um CEP e obter informações detalhadas sobre o endereço correspondente, incluindo logradouro, bairro e UF.
+
 Previsão do Tempo: Fornece previsões meteorológicas para a região associada ao CEP inserido.
 Responsividade: O design do aplicativo é responsivo e se adapta a diferentes tamanhos de tela, garantindo uma boa experiência de usuário em dispositivos móveis e desktop.
-Tecnologias Utilizadas
+
+Tecnologias Utilizadas:
 HTML5
 CSS3 (com uso de Flexbox e Media Queries para responsividade)
 JavaScript (para validação de formulários e manipulação do DOM)
@@ -16,4 +18,8 @@ Clique no botão "Acessar" para obter as informações sobre o CEP e a previsão
 Veja os resultados exibidos na mesma página.
 
 Contato:
+https://www.linkedin.com/in/elineison-inacio-de-sousa/
+
+
+
 https://www.linkedin.com/in/elineison-inacio-de-sousa/
