@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link src="Images/iconeClouds.svg">
     <link rel="icon" href="./Images/iconeClouds.svg">
     <title>DncWeather</title>
 </head>
@@ -42,7 +40,7 @@
                 </div>
                 <div>
                     <label for="cep">Digite o CEP:</label><br>
-                    <input type="text" pattern="[0,9]" maxlength="8" id="cep" value="" placeholder="Insira o CEP">
+                    <input type="text" pattern="\d{5}-\d{3}" maxlength="9" id="cep" placeholder="12345-678">
                 </div>
                 <div id="dados">
                     <label for="latitude">Digite a latitude e longitude para saber a previsão:</label>
@@ -56,7 +54,7 @@
                     </div>
                 </div>
                 <div>
-                    <button onclick="start()"type="button">Acessar</button>
+                    <button type="button" onclick="scrollToResults()">Acessar</button>
                 </div>
             </form>
             <div id="resultado">
@@ -75,7 +73,7 @@
                     <p class="item" id="uf"></p>
                 </div>
             </div>
-            <div id="previsãoTempo">
+            <div id="previsaoTempo">
                 <div id="titulo2">
                     <h1>Previsão do tempo na região:</h1>
                     <img src="./Images/iconeClouds.svg" alt="iconeClouds">
@@ -89,7 +87,12 @@
             <p>Termos de Uso | Política de Privacidade</p>
         </footer>
     </main>
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function scrollToResults() {
+            // Use smooth scroll behavior for better user experience
+            document.querySelector('#resultado').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
-
-</html>""
+</html>

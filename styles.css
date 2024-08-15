@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Para facilitar o controle do tamanho dos elementos */
 }
 
 body {
@@ -20,12 +21,17 @@ nav {
     color: white;
     font-weight: 800;
     height: 103px;
-
+    width: 100%; /* Garante que o nav ocupe a largura total */
+    padding: 0 20px; /* Adiciona padding para o conteúdo interno */
+    box-sizing: border-box;
 }
 
 h1 {
+    font-family: Inter;
+    font-size: 40px;
     font-weight: 800;
-    font-size: 50px;
+    line-height: 60.51px;
+    text-align: left;
 }
 
 #lateralD {
@@ -45,6 +51,7 @@ article {
     align-items: center;
     margin-top: 123px;
     gap: 45px;
+    padding: 0 20px;
 }
 
 form {
@@ -54,6 +61,8 @@ form {
     padding: 61px;
     border-radius: 30px;
     margin-top: 127px;
+    width: 100%;
+    max-width: 600px;
 }
 
 form label {
@@ -67,17 +76,16 @@ input {
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
-    font-weight: 400px;
-    width: 97%;
+    font-weight: 400;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #coordenadas {
     display: flex;
-    justify-content: space-around;
-
-
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 button {
@@ -104,6 +112,7 @@ button:hover {
     font-weight: 800;
     display: inline-block;
     margin-top: 200px;
+    padding: 0 20px;
 }
 
 #titulo1 {
@@ -121,6 +130,8 @@ button:hover {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o conteúdo */
 }
 
 #resultado1 {
@@ -129,14 +140,18 @@ button:hover {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o conteúdo */
 }
 
 .item {
-    flex: 1
+    flex: 1;
+    text-align: center;
 }
 
 #previsãoTempo {
     margin-top: 123px;
+    padding: 0 20px; /* Adiciona padding para garantir o alinhamento */
 }
 
 #titulo2 {
@@ -144,6 +159,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center; /* Centraliza o texto */
 }
 
 #resultado2 {
@@ -151,10 +167,13 @@ button:hover {
     font-weight: 800;
     background-color: #FFFFFF;
     display: inline-block;
-    padding: 20px 185.70px 20px 185.70px;
+    padding: 20px;
     border-radius: 30px;
     border: 1px solid #0C70F2;
     margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
 }
 
 footer {
@@ -163,10 +182,108 @@ footer {
     color: #F2F2F2;
     background-color: #0C70F2;
     margin-top: 200px;
-    padding: 20px 0px 20px 0px;
-    text-align: end;
+    padding: 20px 0px;
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Garante que o footer ocupe a largura total */
+    box-sizing: border-box;
 }
 
 footer p {
-    margin-right: 40px;
+    margin-right: 0; /* Remove a margem direita */
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 1024px) {
+    #lateralI {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    
+    #resultado2 {
+        padding: 15px;
+    }
+    
+    form {
+        padding: 40px;
+    }
+    
+    button {
+        font-size: 28px;
+    }
+    
+    #resultado {
+        margin-top: 100px;
+    }
+    
+    footer {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 0;
+    }
+    
+    #lateralD {
+        margin: 10px 0;
+    }
+    
+    #lateralI {
+        flex-direction: column;
+        margin-right: 0;
+        gap: 15px;
+        font-size: 18px;
+    }
+    
+    article {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    
+    form {
+        padding: 20px;
+        margin-top: 50px;
+    }
+    
+    input, button {
+        font-size: 18px;
+    }
+    
+    #coordenadas {
+        flex-direction: column;
+    }
+    
+    #resultado2 {
+        padding: 15px;
+    }
+    
+    footer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    form label {
+        font-size: 20px;
+    }
+    
+    #resultado2 {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    footer {
+        font-size: 16px;
+        padding: 10px 0;
+    }
 }
