@@ -1,3 +1,4 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ body {
     background-color: #F2F2F2;
 }
 
+/* Estilização da navegação */
 nav {
     display: flex;
     justify-content: space-between;
@@ -24,10 +26,12 @@ nav {
     width: 100%; /* Garante que o nav ocupe a largura total */
     padding: 0 20px; /* Adiciona padding para o conteúdo interno */
     box-sizing: border-box;
+    max-width: 1920px; /* Limite máximo para telas maiores */
+    margin: 0 auto; /* Centraliza o nav na tela */
 }
 
 h1 {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 40px;
     font-weight: 800;
     line-height: 60.51px;
@@ -35,14 +39,21 @@ h1 {
 }
 
 #lateralD {
-    margin-left: 56px;
+    padding-left: 20px; /* Substitui margin-left por padding interno */
 }
 
 #lateralI {
     display: flex;
-    margin-right: 69px;
+    padding-right: 20px; /* Substitui margin-right por padding interno */
     gap: 45px;
     font-size: 25px;
+}
+
+/* Estilização do artigo e seções principais */
+article, section {
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza na tela */
+    padding: 0 20px; /* Padding lateral */
 }
 
 article {
@@ -60,9 +71,10 @@ form {
     text-align: left;
     padding: 61px;
     border-radius: 30px;
-    margin-top: 127px;
+    margin: 127px auto 0 auto; /* Centraliza o form horizontalmente */
     width: 100%;
     max-width: 600px;
+    box-sizing: border-box; /* Garante que o padding seja incluído no width */
 }
 
 form label {
@@ -149,7 +161,7 @@ button:hover {
     text-align: center;
 }
 
-#previsãoTempo {
+#previsaoTempo {
     margin-top: 123px;
     padding: 0 20px; /* Adiciona padding para garantir o alinhamento */
 }
@@ -170,12 +182,13 @@ button:hover {
     padding: 20px;
     border-radius: 30px;
     border: 1px solid #0C70F2;
-    margin-top: 20px;
+    margin: 20px auto; /* Centraliza horizontalmente */
     width: 100%;
     max-width: 600px;
     box-sizing: border-box; /* Inclui o padding no tamanho total */
 }
 
+/* Estilização do rodapé */
 footer {
     font-size: 25px;
     font-weight: 600;
@@ -185,6 +198,8 @@ footer {
     padding: 20px 0px;
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garante que o footer ocupe a largura total */
+    max-width: 1920px; /* Limite máximo para telas maiores */
+    margin: 0 auto; /* Centraliza o footer na tela */
     box-sizing: border-box;
 }
 
@@ -196,7 +211,7 @@ footer p {
 @media (max-width: 1024px) {
     #lateralI {
         font-size: 20px;
-        margin-right: 20px;
+        padding-right: 10px;
     }
     
     #resultado2 {
@@ -235,7 +250,7 @@ footer p {
     
     #lateralI {
         flex-direction: column;
-        margin-right: 0;
+        padding-right: 0;
         gap: 15px;
         font-size: 18px;
     }
@@ -285,5 +300,18 @@ footer p {
     footer {
         font-size: 16px;
         padding: 10px 0;
+    }
+}
+
+/* Media Queries para telas grandes */
+@media (min-width: 1920px) {
+    body {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    
+    nav, footer, form, #resultado2 {
+        max-width: 1920px;
+        margin: 0 auto;
     }
 }
