@@ -12,6 +12,11 @@ body {
     text-align: center;
     font-family: "Inter", sans-serif;
     background-color: #F2F2F2;
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */
+}
+
+main {
+    flex-grow: 1; /* Faz com que o conteúdo principal cresça para ocupar o espaço disponível */
 }
 
 /* Estilização da navegação */
@@ -62,7 +67,6 @@ article {
     align-items: center;
     margin-top: 123px;
     gap: 45px;
-    padding: 0 20px;
 }
 
 form {
@@ -164,6 +168,7 @@ button:hover {
 #previsaoTempo {
     margin-top: 123px;
     padding: 0 20px; /* Adiciona padding para garantir o alinhamento */
+    margin-bottom: 50px; /* Adiciona espaço abaixo da previsão do tempo */
 }
 
 #titulo2 {
@@ -194,7 +199,7 @@ footer {
     font-weight: 600;
     color: #F2F2F2;
     background-color: #0C70F2;
-    margin-top: 200px;
+    margin-top: 50px; /* Garante espaço acima do rodapé */
     padding: 20px 0px;
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garante que o footer ocupe a largura total */
